@@ -14,6 +14,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# Sakura flags
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := ArmSM
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_BUILD_TYPE := gapps
+
+# Device id
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
