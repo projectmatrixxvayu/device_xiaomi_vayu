@@ -49,6 +49,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Signing Rom with test keys
+include vendor/lineage-priv/keys/keys.mk
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
